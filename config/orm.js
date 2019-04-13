@@ -69,7 +69,9 @@ function printQuestionMarks(num) {
   
       queryString += " SET ";
       console.log(objColVals)
+      //objColVals = "devoured=true"; //(this works)
       queryString += objToSql(objColVals);
+      
       //this is undefined---------------------------------------------------------------------------------------
         //having trouble connecting to table's data in general
       queryString += " WHERE ";
